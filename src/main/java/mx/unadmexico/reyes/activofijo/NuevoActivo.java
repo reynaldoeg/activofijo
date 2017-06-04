@@ -32,7 +32,7 @@ public class NuevoActivo extends AppCompatActivity {
         mydb = new DBHelper(this);
 
         Bundle extras = getIntent().getExtras();
-
+        // Si trae extras (parámetros) se Actualiza, si no, es uno Nuevo
         if(extras != null){
 
             Value = extras.getInt("id");

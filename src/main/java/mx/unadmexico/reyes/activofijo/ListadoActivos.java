@@ -21,30 +21,22 @@ public class ListadoActivos extends AppCompatActivity {
         setContentView(R.layout.listado_activos);
         addAsset();
 
-        //ArrayList<String> descripciones = new ArrayList<>();
-        //descripciones.add("Mesa");
-        //descripciones.add("Silla");
-        //descripciones.add("Escritorio");
-
         ArrayList descripciones = mydb.getAllAssets();
-        //ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, array_list);
         ListView lstAssets = (ListView) findViewById(R.id.lstAssets);
-        //lstAssets.setAdapter(arrayAdapter);
         lstAssets.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, descripciones));
 
         lstAssets.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            //public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,long arg3) {
-                int id_To_Search = position + 1;
+            int id_To_Search = position + 1;
 
-                Bundle dataBundle = new Bundle();
-                dataBundle.putInt("id", id_To_Search);
+            Bundle dataBundle = new Bundle();
+            dataBundle.putInt("id", id_To_Search);
 
-                Intent intent = new Intent(getApplicationContext(),DetalleActivo.class);
+            Intent intent = new Intent(getApplicationContext(),DetalleActivo.class);
 
-                intent.putExtras(dataBundle);
-                startActivity(intent);
+            intent.putExtras(dataBundle);
+            startActivity(intent);
             }
         });
     }
@@ -54,10 +46,10 @@ public class ListadoActivos extends AppCompatActivity {
         miFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ListadoActivos.this, NuevoActivo.class);
-                startActivity(intent);
+            Intent intent = new Intent(ListadoActivos.this, NuevoActivo.class);
+            startActivity(intent);
 
-                finish();
+            finish();
             }
         });
     }
