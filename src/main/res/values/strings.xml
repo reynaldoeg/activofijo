@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Activo Fijo</string>
+    <string name="icssa">Ingeniería Costos y Servicios SA de CV</string>
+    <string name="Assets_list">Listado de Activos</string>
+    <string name="New_asset">Nuevo Activo</string>
+
+    <!-- Nuevo Activo -->
+    <string name="num_activo">Número de Activo</string>
+    <string name="categ">Categoria</string>
+    <string name="desc_corta">Descripción Corta</string>
+    <string name="desc_larga">Descripcion Larga</string>
+    <string name="marca">Marca</string>
+    <string name="modelo">Modelo</string>
+    <string name="serie">Número de Serie</string>
+    <string name="saved">Activo Guardado</string>
+    <string name="err_saved">El Activo no se guardo. Intente de nuevo</string>
+</resources>

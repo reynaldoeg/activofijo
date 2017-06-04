@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="label_size">18dp</dimen>
+    <dimen name="txt_size">14dp</dimen>
+
+    <dimen name="lbl_margin_top">16dp</dimen>
+    <dimen name="txt_margin_top">8dp</dimen>
+
+    <dimen name="btn_margin">8dp</dimen>
+</resources>
