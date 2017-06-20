@@ -14,4 +14,5 @@
     <string name="serie">Número de Serie</string>
     <string name="saved">Activo Guardado</string>
     <string name="err_saved">El Activo no se guardo. Intente de nuevo</string>
+    <string name="alto">Altura</string>
 </resources>
